@@ -1,0 +1,35 @@
+{
+  "name": "wordpress-starter",
+  "description": "scaffold wordpress project",
+  "version": "0.1.0",
+  "contributors": [
+    {
+      "name": "Tiago Celestino",
+      "email": "tcelestino@gmail.com",
+      "web": "github.com/tcelestino"
+    }
+  ],
+  "repositories": [
+    {
+      "type": "git",
+      "url": "github.com/tcelestino/wordpress-starter"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "Copyright",
+      "url": ""
+    }
+  ],
+  "homepage": "http://github.io/tcelestino/wordpress-starter",
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "load-grunt-tasks": "^0.5.0",
+    "grunt-contrib-compass": "~0.6.0",
+    "grunt-contrib-cssmin": "^0.9.0",
+    "grunt-contrib-concat": "~0.3.0",
+    "grunt-contrib-uglify": "~0.2.7",
+    "grunt-browser-sync": "^0.7.2",
+    "grunt-contrib-watch": "~0.5.3"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "wordpress-starter",
+  "version": "0.1.0",
+  "authors": [
+    "Tiago Celestino <tcelestino@gmail.com>"
+  ],
+  "description": "scaffold wordpress project",
+  "license": "",
+  "homepage": "http://github.com/tcelestino/wordpress-starter",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "modernizr": "~2.8.2",
+  }
+}
