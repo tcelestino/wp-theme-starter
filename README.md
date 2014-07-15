@@ -4,10 +4,10 @@ Scaffold to WordPress themes
 
 #How to usage
 
-````shell
-git clone url-repo
+```sh
+git clone url-repo your_theme
 mv wp-theme-starter name-theme
-
+```
 
 #Plugins
 
