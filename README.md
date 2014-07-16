@@ -34,13 +34,11 @@ sudo bower install
 
 ```sh
 //development
-cd your-theme
 grunt develop
 ```
 
 ```sh
 //build
-cd your-theme
 grunt develop
 ```
 
