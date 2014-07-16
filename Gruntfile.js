@@ -18,6 +18,7 @@ module.exports = function(grunt) {
 
       dist: {
         options: {
+          banner: '<%= banner_name %>',
           sassDir: 'src/scss/',
           cssDir: 'assets/css/',
           imagesDir: 'assets/images/',
@@ -60,9 +61,23 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          'assets/vendor.min.js': 'assets/js/vendor.js',
-          'assets/app.min.js': 'assets/js/app.js',
+          'assets/js/vendor.min.js': 'assets/js/vendor.js',
+          'assets/js/app.min.js': 'assets/js/app.js',
         }
+      }
+    },
+
+    imagemin: {
+      optimize: {
+        options: {
+          optimizationLevel: 3
+        },
+        files: [{
+          expand: true,
+          cwd: 'src/',
+          src: ['**/*.{png,jpg,gif}'],
+          dest: 'assets/images/'
+        }]
       }
     },
 
@@ -96,8 +111,7 @@ module.exports = function(grunt) {
           'src/js/**/*.js'
         ],
         tasks: [
-          'concat', 
-          'uglify'
+          'concat'
         ]
        }
     },
@@ -110,14 +124,16 @@ module.exports = function(grunt) {
   ]);
 
   grunt.registerTask('dev', [
-   'compass:dev',
-   'concat',
-   'watch'
+    'browserSync',
+    'compass:dev',
+    'concat',
+    'watch'
   ]);
 
   grunt.registerTask('build', [
    'compass:dist',
    'cssmin',
+   'imagemin',
    'concat',
    'uglify'
   ]);

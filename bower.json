@@ -1,12 +1,12 @@
 {
-  "name": "wordpress-starter",
+  "name": "wp-theme-starter",
   "version": "0.1.0",
   "authors": [
     "Tiago Celestino <tcelestino@gmail.com>"
   ],
-  "description": "scaffold wordpress project",
+  "description": "scaffold theme wordpress",
   "license": "",
-  "homepage": "http://github.com/tcelestino/wordpress-starter",
+  "homepage": "http://github.com/tcelestino/wp-theme-starter",
   "ignore": [
     "**/.*",
     "node_modules",
@@ -16,5 +16,6 @@
   ],
   "devDependencies": {
     "modernizr": "~2.8.2",
+    "jquery": "1.11.1"
   }
 }
