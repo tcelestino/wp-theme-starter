@@ -1,17 +1,17 @@
-# WordPress Themes Starter
+# WordPress Theme Starter
 
 Scaffold to WordPress themes
 
-#How to usage
+#How to use
 
 ```sh
 git clone url-repo your-theme
 cd your-theme
-sudo npm install
-sudo bower install
+npm install
+bower install
 ```
 
-#Tecnologies
+#Technologies
 
 - [WordPress](http://wordpress.org/) - software you can use to create a beautiful website or blog
 - [node js](http://nodejs.org/) - platform built on Chrome's JavaScript runtime for easily building fast, scalable network applications
@@ -19,18 +19,6 @@ sudo bower install
 - [bower](http://bower.io/) - a package manager for the web
 
 #Grunt
-
-##tasks
-
-- [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks)
-- [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
-- [grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
-- [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)
-- [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
-- [grunt-browser-sync](https://github.com/shakyShane/grunt-browser-sync)
-- [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
-
-##How to usage grunt tasks
 
 ```sh
 //development
@@ -41,6 +29,16 @@ grunt develop
 //build
 grunt develop
 ```
+
+##Packages
+
+- [load-grunt-tasks](https://github.com/sindresorhus/load-grunt-tasks)
+- [grunt-contrib-compass](https://github.com/gruntjs/grunt-contrib-compass)
+- [grunt-contrib-cssmin](https://github.com/gruntjs/grunt-contrib-cssmin)
+- [grunt-contrib-concat](https://github.com/gruntjs/grunt-contrib-concat)
+- [grunt-contrib-uglify](https://github.com/gruntjs/grunt-contrib-uglify)
+- [grunt-browser-sync](https://github.com/shakyShane/grunt-browser-sync)
+- [grunt-contrib-watch](https://github.com/gruntjs/grunt-contrib-watch)
 
 #Bower
 
@@ -55,7 +53,7 @@ grunt develop
 
 #Questions
 
-* Porque está usando uma versão antiga do jQuery?
+* Why do you use jQuery latest?
 
   Infelizmente, nem todos os clientes ou projetos que estamos envolvidos tem que rodar em browsers modernos. A versão mais atual do jQuery não mantêm suporte para as versões 6,7,8 do Internet Explorer. [Para maiores informações, clique aqui](http://jquery.com/download/)
 
