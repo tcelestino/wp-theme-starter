@@ -1,5 +1,13 @@
 <?php get_header(); ?>
   <h2>Search Result</h2>
+  <section id="search_form">
+    <form action="" method="POST">
+      <fieldset>
+        <input type="search" name="s" id="search-input">
+        <button type="submit">Pesquisar</button>
+      </fieldset>
+    </form>
+  </section>
   <?php if(have_posts()) { ?>
   <dl class="result-search">
     <?php while(have_posts()) { the_post(); 
