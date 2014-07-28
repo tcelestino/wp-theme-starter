@@ -51,11 +51,7 @@ grunt develop
 - [YOAST WordPress SEO](https://yoast.com/wordpress/plugins/seo/) - write better content and have a fully optimized WordPress
 - [Advanced Custom Fields](http://www.advancedcustomfields.com/) - create custom fields customizes
 
-#Questions
-
-* Why do you use jQuery latest?
-
-  Infelizmente, nem todos os clientes ou projetos que estamos envolvidos tem que rodar em browsers modernos. A versão mais atual do jQuery não mantêm suporte para as versões 6,7,8 do Internet Explorer. [Para maiores informações, clique aqui](http://jquery.com/download/)
+#FAQ
 
 #Features
 
