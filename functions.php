@@ -125,7 +125,7 @@ function showFieldsWordPress($post, $metabox) {
 // save data customs field
 add_action('save_post', 'saveCustomFields');
 function saveCustomFields($postID) {
-  update_post_meta($postID, '_wordpress_url', $_POST['_wordpress_url'], false);
+  update_post_meta($postID, '_custom_field', $_POST['_custom_field'], false);
 };
 
 // custom post type

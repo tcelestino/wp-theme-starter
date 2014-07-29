@@ -28,6 +28,6 @@
     <?php } ?>
   </dl>
   <?php } else { ?>
-  <p><?php echo __e('Nothing result.'); ?></p>
+  <p><?php echo __e('Nothing found.'); ?></p>
   <?php } ?>
 <?php get_footer(); ?>
