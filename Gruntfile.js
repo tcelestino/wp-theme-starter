@@ -1,11 +1,13 @@
-'use strict';
+/* global module, require */
 module.exports = function(grunt) {
+
+  'use strict';
 
   require('load-grunt-tasks')(grunt);
 
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
-    banner_name: '/*! <%= pkg.name %> - v<%= pkg.version %> */',
+    bannerName: '/*! <%= pkg.name %> - v<%= pkg.version %> */',
 
     compass: {
       dev: {
@@ -18,7 +20,7 @@ module.exports = function(grunt) {
 
       dist: {
         options: {
-          banner: '<%= banner_name %>',
+          banner: '<%= bannerName %>',
           sassDir: 'src/scss/',
           cssDir: 'assets/css/',
           imagesDir: 'assets/images/',
@@ -30,7 +32,7 @@ module.exports = function(grunt) {
     cssmin: {
       compile: {
         options: {
-          banner: '<%= banner_name %>'
+          banner: '<%= bannerName %>'
         },
         files: {
           'assets/site.min.css': [
@@ -46,7 +48,7 @@ module.exports = function(grunt) {
       union: {
         options: {
           stripBanners: true,
-          banner: '<%= banner_name %>'
+          banner: '<%= bannerName %>'
         },
         files: {
           'assets/js/app.js': [
@@ -92,7 +94,7 @@ module.exports = function(grunt) {
         },
         options: {
           watchTask: true,
-          baseDir: "."
+          baseDir: '.'
         }
       }
     },
@@ -101,13 +103,13 @@ module.exports = function(grunt) {
       css: {
         files: ['src/scss/{,*/}*.{scss,sass}'],
         tasks: [
-          'compass:dev', 
+          'compass:dev',
           'cssmin'
         ]
       },
       js: {
         files: [
-          'Gruntfile.js', 
+          'Gruntfile.js',
           'src/js/**/*.js'
         ],
         tasks: [
@@ -119,7 +121,7 @@ module.exports = function(grunt) {
   });
 
   grunt.registerTask('default', [
-    'browserSync', 
+    'browserSync',
     'watch'
   ]);
 
@@ -137,4 +139,4 @@ module.exports = function(grunt) {
    'concat',
    'uglify'
   ]);
-}
+};
