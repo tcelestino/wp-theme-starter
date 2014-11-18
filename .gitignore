@@ -76,3 +76,8 @@ bower_components
 
 #sftp configuration file
 sftp-config.json
+
+
+# WordPress Theme Starter
+.sass-cache
+assets/
