@@ -1,1 +1,0 @@
-/*! wordpress-starter - v0.1.0 */
