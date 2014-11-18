@@ -1,7 +1,5 @@
 {
     "maxerr"        : 50,
-
-    // Enforcing
     "bitwise"       : true,
     "camelcase"     : true,
     "curly"         : true,
@@ -18,7 +16,6 @@
     "nonew"         : true,
     "plusplus"      : false,
     "quotmark"      : "single",
-
     "undef"         : true,
     "unused"        : true,
     "strict"        : true,
@@ -57,6 +54,7 @@
       "jQuery": true,
       "_": true,
       "Backbone": true,
-      "require": true
+      "require": true,
+      "module": true
     }
 }

@@ -1,4 +1,3 @@
-/* global module, require */
 module.exports = function(grunt) {
 
   'use strict';
@@ -117,7 +116,7 @@ module.exports = function(grunt) {
     'watch'
   ]);
 
-  grunt.registerTask('dev', [
+  grunt.registerTask('develop', [
     'browserSync',
     'compass:dev',
     'concat',
