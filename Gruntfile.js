@@ -14,7 +14,7 @@ module.exports = function(grunt) {
         options: {
           sassDir: 'src/scss/',
           cssDir: 'src/css/',
-          imagesDir: 'src/images/'
+          imagesDir: 'assets/images/'
         }
       },
 
@@ -35,11 +35,7 @@ module.exports = function(grunt) {
           banner: '<%= bannerName %>'
         },
         files: {
-          'assets/site.min.css': [
-            'assets/css/**/*.css',
-            '!src/assets/css/normalize.css'
-            ],
-          'assets/css/normalize.min.css': ['src/assets/css/normalize.css']
+          'assets/site.min.css': ['assets/css/**/*.css']
         }
       },
     },
@@ -102,19 +98,15 @@ module.exports = function(grunt) {
     watch: {
       css: {
         files: ['src/scss/{,*/}*.{scss,sass}'],
-        tasks: [
-          'compass:dev',
-          'cssmin'
-        ]
+        tasks: ['compass:dev']
       },
+
       js: {
         files: [
           'Gruntfile.js',
           'src/js/**/*.js'
         ],
-        tasks: [
-          'concat'
-        ]
+        tasks: ['concat']
        }
     },
 
