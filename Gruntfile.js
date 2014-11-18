@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           sassDir: 'src/scss/',
-          cssDir: 'src/css/',
+          cssDir: 'assets/css/',
           imagesDir: 'assets/images/'
         }
       },
